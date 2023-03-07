@@ -6,7 +6,7 @@ export function FooterC() {
 			<div className='sm:flex sm:items-center sm:justify-between'>
 				<a href='https://flowbite.com/' className='mb-4 flex items-center sm:mb-0'>
 					<img src={Logo} className='mr-3 h-8' alt='Flowbite Logo' />
-					<span className='self-center whitespace-nowrap text-2xl font-semibold dark:text-white'>Flowbite</span>
+					<span className='self-center whitespace-nowrap text-2xl font-semibold dark:text-white'>Cinema Base</span>
 				</a>
 				<ul className='mb-6 flex flex-wrap items-center text-sm text-gray-500 dark:text-gray-400 sm:mb-0'>
 					<li>
