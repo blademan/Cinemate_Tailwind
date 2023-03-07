@@ -18,19 +18,19 @@ export const MovieList = ({ title, apiPath }) => {
 			console.log(isError)
 		}
 	}, [isError])
-
+	if (isError || !Array.isArray(movies)) {
+		return <div>Error loading movies</div>
+	}
 	return (
-		<main>
-			<section className='mx-auto py-7 '>
-				{isLoading && <div>Loading...</div>}
-				{movies && (
-					<div className='flex flex-wrap justify-start gap-4'>
-						{movies.map(movie => (
-							<Card key={movie.id} movie={movie} />
-						))}
-					</div>
-				)}
-			</section>
-		</main>
+		<section className='mx-auto max-w-7xl py-7'>
+			{isLoading && <div>Loading...</div>}
+			{movies && (
+				<div className='flex flex-wrap justify-start gap-4 other:justify-evenly'>
+					{movies.map(movie => (
+						<Card key={movie.id} movie={movie} />
+					))}
+				</div>
+			)}
+		</section>
 	)
 }

@@ -7,6 +7,11 @@ export const useMovies = (apiPath, queryTerm) => {
 		const response = await axios.get(
 			`https://api.themoviedb.org/3/${apiPath}?api_key=${apiKey}&region=us&query=${queryTerm}`
 		)
-		return response.data.results
+
+		if (response.data.results) {
+			return response.data.results
+		} else {
+			return response.data
+		}
 	})
 }

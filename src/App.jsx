@@ -2,9 +2,8 @@ import { FooterC, Header } from './components'
 import { AllRoutes } from './routes/AllRoutes'
 function App() {
 	return (
-		<div className='App'>
+		<div className='dark:bg-darkbg'>
 			<Header />
-
 			<AllRoutes />
 			<FooterC />
 		</div>

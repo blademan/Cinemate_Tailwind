@@ -23,7 +23,7 @@ export const Search = ({ title, apiPath }) => {
 	}, [isError])
 
 	return (
-		<main>
+		<>
 			<section className='py-5'>
 				<div className=' text-center text-2xl text-gray-400'>
 					{movies.length === 0 ? `No result found for ${queryTerm}` : `Result for ${queryTerm}`}
@@ -40,6 +40,6 @@ export const Search = ({ title, apiPath }) => {
 					</div>
 				)}
 			</section>
-		</main>
+		</>
 	)
 }
