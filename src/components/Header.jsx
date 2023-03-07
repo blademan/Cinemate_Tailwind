@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Link, NavLink, useNavigate } from 'react-router-dom'
 import Logo from '../assets/logo.png'
-
 export const Header = () => {
 	const [hidden, setHidden] = useState(true)
 	const [darkMode, setDarkMode] = useState(JSON.parse(localStorage.getItem('darkMode')) || false)
@@ -31,10 +30,10 @@ export const Header = () => {
 
 	return (
 		<header>
-			<nav className='dark:border-b-1 border-b-2 border-gray-200 bg-white px-2 py-2 dark:border-gray-900 dark:bg-gray-900 sm:px-4'>
+			<nav className='dark:border-b-1 border-b-2 border-gray-200 bg-white px-2 py-4 dark:border-gray-900 dark:bg-gray-900 sm:px-4'>
 				<div className='mx-auto flex flex-wrap items-center justify-between'>
 					<Link to='/' className='flex items-center'>
-						<img src={Logo} className='mr-2 h-8 sm:h-9' alt='Cinemate Logo' />
+						<img src={Logo} className='mr-2 h-20 sm:h-9' alt='Cinemate Logo' />
 						<span className='self-center whitespace-nowrap text-2xl font-semibold dark:text-white'>Cinemate</span>
 					</Link>
 
