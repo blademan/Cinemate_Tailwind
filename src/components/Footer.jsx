@@ -1,6 +1,6 @@
 import Logo from '../assets/logo.png'
 
-export function FooterC() {
+export function Footer() {
 	return (
 		<footer className='rounded-lg bg-white p-4 shadow dark:bg-gray-900 md:px-6 md:py-8'>
 			<div className='sm:flex sm:items-center sm:justify-between'>
