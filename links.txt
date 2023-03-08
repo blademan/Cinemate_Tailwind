@@ -18,3 +18,5 @@ https://api.themoviedb.org/3/movie/upcoming?api_key=b80d59c33d6d57ed9c7e3713f91c
 
 Search:
 https://api.themoviedb.org/3/search/movie?api_key=b80d59c33d6d57ed9c7e3713f91c188a&query={movie_name}
+
+up
